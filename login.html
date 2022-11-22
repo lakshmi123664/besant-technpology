@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <style>
+        #form{
+ text-align: center;
+         }
+         
+ input{
+     width:50%;
+ 
+ }
+ form{
+     width:300px;
+     padding:50PX;
+     border: 2px SOLID black;
+     margin: 20px;
+   position: absolute;
+   left: 40%;
+   background-color: rgb(243, 245, 246);
+ 
+ }
+ </style>
+</head>
+<script src="https://kit.fontawesome.com/e9038b54ec.js" crossorigin="anonymous"></script>
+<body>
+    <form>
+    <div id="form">
+    <h1 id="head">Admin Login Area</h1>
+    <p>please provide your details</p>
+    <i class="fa-solid fa-user"></i>
+    <input type="text"placeholder="username"id="user">
+    <br><br>
+    <i class="fa-solid fa-key"></i>
+    <input type="text"placeholder="password"id="pw">
+    <br><br>
+    <input type="button"onclick="login()"value="login">
+</form>
+<script>
+    function login(){
+        const a=document.getElementById("user").value
+        const b=document.getElementById("pw").value
+        if (a.length<6){
+            alert("fill all above")
+        }
+    
+        else if(b.length<6){
+            alert("error")
+        }
+        else{
+            alert("succesfully login!")
+            myform()
+        }
+        function myform(){
+        }
+    }
+</script>
+</body>
+</html>
