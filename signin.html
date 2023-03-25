@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin page</title>
+
+<style>
+#body{
+    background-color: lightgoldenrodyellow;
+}
+
+#k{
+    background-color: red;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    
+    
+}
+#m{
+    display: flex;
+    height: 400px;
+    top: 20%;
+    left: 25%;
+    margin: 50px;
+    transform: translate( 18%, 25%);
+      
+    
+}
+#l{
+    background-color: whitesmoke;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+#l input{
+    width: 250px;
+    padding: 10px;
+    background-color: rgb(239, 233, 233);
+    border-radius: 10px;
+    outline: none;
+}
+#l button{
+    width: 120px;
+    padding: 7px;
+    border-radius: 10px;
+}
+#k button{
+    width: 120px;
+    padding: 7px;
+    border-radius: 10px; 
+}
+
+   </style>
+   
+</head>
+<body>
+
+    <div id="m">
+        <div id="k">
+        <h1>Welcome Back</h1>
+        <p>To keep connected with us please login with your personal info</p>
+        <button>SIGN IN</button>
+        </div>
+        <div id="l">
+        <H1><B>Create Account</B></a></H1>
+        <h4>or use your email for registration</h4>
+    <input type="text"placeholder="fullname"id="names",required><br><br>
+    <input type="email"placeholder="email"id="email",required><br><br>
+    <input type="password"placeholder="password" id="psw",required><br><br>
+    <input type="password"placeholder="confirmpassword" id="cpsw",required><br><br>
+   <input type="button"value="Create Account" onclick="login()"> 
+</p>
+</div>
+<script>
+function login(){
+var n=document.getElementById("names").value
+var x=document.getElementById("psw").value
+var y=document.getElementById("cpsw").value
+var z=document.getElementById("email").value
+
+if(n.length<3){
+    alert("please fill above details ")
+}
+else if(x != y){
+    alert("password does not match")
+}
+else{
+    alert("Account Succesfully created please login.......!")
+    window.location.href="login.html"
+localStorage.setItem("psw",x)
+localStorage.setItem("cpsw",y)
+localStorage.setItem("email",z)
+}
+
+}
+
+</script>
+
+</body>
+</html>

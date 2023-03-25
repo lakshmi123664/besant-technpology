@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+
+    <style>
+
+        body{
+            background-image:  url("https://th.bing.com/th/id/OIP.oAATRdKms9i4gDRG3CSJfAHaFj?w=235&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            background-size: cover;
+        }
+
+        .login{
+            width: 40%;
+            top: 20%;
+            left: 25%;
+            transform: translate(40%);
+            position:absolute;
+            color: #fff; 
+        }
+
+        .login h1{
+            font-size: 30px;
+            text-align: left;
+            
+        }
+
+        .login p{
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        .login input{
+            font-size: 16px;
+            width: 50%;
+            padding:10px 15px;
+            border-radius: 7px;
+        }
+        .login button{
+            font-size: 16px;
+            width: 30%;
+            padding:10px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .login button:hover{
+            background-color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="login">
+    <h1>LOGIN FORM</h1>
+<form>
+
+<input type="email"placeholder="email"id="email2",require><br><br>
+<input type="password"placeholder="password" id="psw2",require><br><br>
+<input type="button"value="SIGN UP" onclick="signin()" style="border: red;color:black;">
+</form>
+<h4>Not have an a account<a href="signin.html">Create Here</a></h4>
+</div>
+</body>
+<script>
+    function signin(){
+        const m=document.getElementById("psw2").value
+        const l=document.getElementById("email2").value
+        if(l===localStorage.getItem("email")&&m===localStorage.getItem("psw")){
+    alert("login successful")
+    window.location.href="home page.html"
+        }
+      
+    else{
+        alert("invalid credentials or you don't have an account please create an account")
+         window.location.href="signin.html"
+    }
+    }
+    </script>
+</html>
+

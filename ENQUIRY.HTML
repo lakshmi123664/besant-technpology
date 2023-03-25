@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enquiry and apply online</title>
+    </head>
+    <head>
+<style>
+#form{
+background-color:white;
+ /* border: 1px solid black;
+border-radius: 5px;  */
+background-repeat: no-repeat;
+background-size: cover;
+/* width: 20%; */
+height: 800px; 
+/* position: relative;
+left:80%;   */
+background-image:url("https://www.shutterstock.com/image-photo/enquiry-workplace-concept-260nw-1344179972.jpg" )
+
+
+}
+
+
+ input{
+    background-color: rgb(241, 245, 245);
+    color: rgb(17, 3, 3);
+    padding: 10px;
+    position: relative;
+    left: 80%;
+    width:200px;
+
+ }
+h4{
+    text-align: center;
+    position: relative;
+    left:30%;
+    color: aliceblue;
+}
+
+select{
+    background-color: rgb(241, 245, 245);
+    color: rgb(17, 3, 3);
+    padding: 10px;
+    position: relative;
+    left: 80%;
+    width:220px;
+}
+
+h3{
+    background-color: skyblue;
+    padding: 10px;
+    position: relative;
+    left: 80%;
+    width:220px;
+}
+         </STYLE>
+</head>
+<body>
+    <DIV ID="form"onClick=form()">
+            <form OnSubmit="onFormSubmit()">
+              
+            <H4>Request for Class Room & Online Training Quotataion </H4>
+            <h3>HOME                                               ONLINE</h3>
+            <input type="text" id="Name" name="Name" placeholder="Enter Your Name".required>
+            <br><br>
+            <input type="text" id="Phonenumber" name="phonenumber"placeholder="Enter your Email".required>
+            <br><br>
+            <input type="email" id="Emailaddress" name="emailaddress"placeholder="Enter Your Mobile NO.".required>
+            <br><br><br>
+            <select>
+                <option>Select Course...!</option>
+                    <option>python</option>
+                    <option>java</option>
+                    <option>testing</option>
+                    <option>DEVOPS</option>
+                    <option>AWS</option>
+                    <option>Linux</option>
+    
+            </select>
+                <br>
+                <br>
+                        
+      <input type="button"value="submit Query"id="submit"onclick="Button()" style="background-color: skyblue;">
+        </form>
+    </DIV>
+<script>
+   function Button(){
+     alert("successfully submitted")
+   }
+   
+</script>
+</body>
+</head>
+</html> 
+
+
+
+
+
+
